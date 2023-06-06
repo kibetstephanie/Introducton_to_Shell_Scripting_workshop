@@ -2,13 +2,13 @@
 
 read -p "What is your age? " AGE
 
-if [[ -z $AGE ]] #-z means if it's empty
+if [[ -z $AGE ]] #-z means "if it's empty"
 then 
     echo "Input cannot be empty"
     exit 1
 fi
 
-if ! [[ $AGE =~ ^[0-9]+$ ]] #All values should be a number
+if ! [[ $AGE =~ ^[0-9]+$ ]] #All values should be a number. It's a RegEx
 then    
     echo "Error: Age should be a number"
     exit 1 #exits the input
