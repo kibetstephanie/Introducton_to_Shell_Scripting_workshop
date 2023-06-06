@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
 
-###### LOGICAL AND #################
 # Capture user input for age and store it in a variable AGE
 read -p "What is your age?: " AGE
 
@@ -9,7 +8,7 @@ read -p "What is your age?: " AGE
 if [[ -z $AGE ]]
 then
   echo "Error: No value provided for age"
-  exit 1 #to show that there is an error
+  exit 1
 fi
 
 # Condition to ensure that age is a number
@@ -20,7 +19,7 @@ then
 fi
 
 # Write your code for the AND operator below this comment
-if [[ $AGE -ge 0 && $AGE -le 17 ]] # -ge: >= && -le: <=
+if [[ $AGE -ge 0 && $AGE -le 17 ]] # "&&": AND operator
 then
   echo "You are young"
 elif [[ $AGE -ge 18 && $AGE -le 35 ]]
@@ -30,4 +29,10 @@ else
   echo "You are old"
 fi
 
-exit 0 # to show that everything ran perfectly
+# Code for the OR operater
+if [[ $AGE == 17 || $AGE == 35 ]] #"||": OR operator && "==":  equal to
+then 
+  echo "You are about to transition from one age bracket to another"
+fi
+
+exit 0
