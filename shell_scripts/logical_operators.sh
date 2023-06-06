@@ -31,3 +31,5 @@ else
 fi
 
 exit 0 # to show that everything ran perfectly
+
+######## LOGICAL OR #########
