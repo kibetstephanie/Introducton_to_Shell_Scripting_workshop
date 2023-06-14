@@ -25,6 +25,8 @@ Learning the basics of Shell Scripting
 6. Logical Operators
 7. Arithmetic Operations
 8. Floating point numbers
+9. Case Statements
+10. Arrays
 
 
 ## License
